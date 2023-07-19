@@ -36,7 +36,7 @@ async function signup(){
 
 <template>
   <div class="container">
-    <h1 class="mt-5">Sign in</h1>
+    <h1 class="mt-5">Login</h1>
     <form>
         <div class="mb-3">
           <label for="email" class="form-label">Email</label>
@@ -44,7 +44,7 @@ async function signup(){
         </div>
         <div class="mb-3">
           <label for="password" class="form-label">Password</label>
-          <input v-model="form.password" type="text" class="form-control" id="password">
+          <input v-model="form.password" type="password" class="form-control" id="password">
         </div>
         <div class="mb-3">
           <button @click.prevent="signin" type="submit" class="btn btn-primary">Sign-in</button>

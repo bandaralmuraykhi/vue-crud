@@ -47,8 +47,9 @@ onMounted(() => fetchData())
         <input v-model="form.pages" type="int" class="form-control" id="pages">
       </div>
       <div class="mb-3">
-      <button type="submit" class="btn btn-primary">Save</button>
+        <button type="submit" class="btn btn-primary">Save</button>
       </div>
     </form>
+
   </main>
 </template>

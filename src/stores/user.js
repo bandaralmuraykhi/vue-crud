@@ -2,6 +2,7 @@ import { ref, computed } from 'vue'
 import { defineStore } from 'pinia'
 import { supabase } from '@/supabase'
 
+// const { data: { user } } = await supabase.auth.getUser()
 
 export const useUserStore = defineStore('user', () => {
   const user = ref('')
@@ -17,11 +18,18 @@ export const useUserStore = defineStore('user', () => {
     console.log(error)
   }
 
+  async function checkLogin() {
+    const { data , error} = await supabase.auth.getUser()
+    if(error === null) {
+      user.value = data.user.email
+    }
+  }
+
 
   async function logout() {
     let { error } = await supabase.auth.signOut()
     user.value = ''
   }
 
-  return { user, login, logout, isAuthenticated }
+  return { user, login, logout, isAuthenticated, checkLogin }
 })

@@ -25,9 +25,9 @@ async function addBook() {
     <h1>Add</h1>
     {{ form }}
     <form @submit.prevent="addBook">
-      <input v-model="form.title"> <br>
-      <input v-model="form.pages"> <br>
-      <button type="submit">Add</button>
+      Title: <br> <input v-model="form.title"> <br>
+      Pages: <br> <input v-model="form.pages"> <br>
+      <button type="submit" class="btn btn-primary btn-sm" >Add</button>
     </form>
   </main>
 </template>
