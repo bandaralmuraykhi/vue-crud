@@ -1,5 +1,8 @@
-## TODO
+## supabase.js
+  you need to create one.
+  https://supabase.io/docs/reference/javascript/supabase-client
 
+## TODO
 - support sign-up   DONE!!!
 - support pagenation 50%
 - support search %95

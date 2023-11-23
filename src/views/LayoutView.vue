@@ -15,10 +15,6 @@ async function logout() {
 </script>
 
 
-
-
-
-
 <template>
 
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -46,11 +42,9 @@ async function logout() {
 </nav>
 
 
-
 <div class="container-fluid">
   <RouterView />
 </div>
-
 
 
 
@@ -59,11 +53,10 @@ async function logout() {
 
 </template>
 
-
-
-
 <style scoped>
 #footer {
   text-align: center;
 }
 </style>
+
+

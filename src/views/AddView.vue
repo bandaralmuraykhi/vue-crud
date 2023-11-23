@@ -3,7 +3,6 @@ import { useRouter, useRoute } from 'vue-router'
 import { onMounted, ref , reactive} from 'vue'
 import { supabase } from '@/supabase'
 
-
 const router = useRouter()
 
 let form = reactive({})

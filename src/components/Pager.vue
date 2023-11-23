@@ -24,7 +24,6 @@ function updatePages() {
 
 watch(()=> props.count, updatePages)
 
-
 </script>
 
 <template>

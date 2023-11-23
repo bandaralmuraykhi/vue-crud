@@ -34,6 +34,7 @@ onMounted(() => fetchData())
 
 </script>
 
+
 <template>
   <main>
     <h1>Edit {{ id }}</h1>
@@ -52,4 +53,6 @@ onMounted(() => fetchData())
     </form>
 
   </main>
+
+  
 </template>

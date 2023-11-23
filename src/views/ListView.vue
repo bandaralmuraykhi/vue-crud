@@ -82,11 +82,6 @@ watch(()=>route.query, fetchData)
   v-for="count in total" 
 -->
 
-
-
-
-
 </main>
-
 
 </template>
